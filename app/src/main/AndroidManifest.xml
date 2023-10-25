@@ -22,12 +22,12 @@
             </intent-filter>
         </activity>
 
-        <receiver android:name=".AirPlaneModeDetector"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.AIRPLANE_MODE"/>
-            </intent-filter>
-        </receiver>
+        <receiver
+            android:name=".AirPlaneModeDetector"
+            android:exported="false" />
+        <receiver
+            android:name=".MainActivity$LocalBroadCast"
+            android:exported="false" />
     </application>
 
 </manifest>
